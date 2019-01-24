@@ -1,0 +1,75 @@
+:root {
+  --pink: #ef5777;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right top, #f8dec2, var(--pink));
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-login {
+  min-height: 300px;
+  min-width: 350px;
+  background-color: #fff;
+  border: 2px solid var(--pink);
+  border-radius: 10px;
+  box-shadow: 1px 2px 5px var(--pink);
+  padding: 20px;
+  margin: auto;
+}
+
+.form-title {
+  text-align: center;
+  color: var(--pink);
+  padding: 20px;
+  margin: 5px;
+  text-transform: uppercase;
+}
+
+input {
+  width: 80%;
+  display: block;
+  padding: 10px;
+  margin: auto;
+  margin-bottom: 20px;
+  border: 1px solid var(--pink);
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 1px 2px 5px var(--pink);
+}
+
+.form-btn {
+  background: linear-gradient(to right top, var(--pink) 10%, #f8dec2);
+  width: 60%;
+  padding: 10px;
+  border: 1px solid var(--pink);
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  display: block;
+  margin: 30px auto auto;
+}
+
+.form-btn:hover {
+  background: linear-gradient(to right top, #f8dec2 10%, var(--pink));
+}
+
+@media only screen and (max-width: 600px){
+  .form-login{
+    min-width: 300px;
+  }
+}
